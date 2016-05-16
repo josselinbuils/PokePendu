@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:weightSum="100"
+    android:padding="20dp"
+    android:id="@+id/mainlayout">
+
+    <ImageView
+        android:id="@+id/image"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:src="@drawable/pendu_7" />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="bottom"
+        android:text="Mot : _ _ _ _ _ _ _"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="bottom"
+        android:text="Entrez une lettre ou un mot :"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:ems="10"
+        android:singleLine="true"
+        android:enabled="false" />
+    
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" />
+    
+    <TextView
+        android:id="@+id/entWords"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:text="Mots entrés :"
+        android:textStyle="bold"
+        android:gravity="top" />
+
+</LinearLayout>
